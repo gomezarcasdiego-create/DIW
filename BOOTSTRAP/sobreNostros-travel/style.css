@@ -5,6 +5,15 @@
     --heading-wash: #f3f6f8;
 }
 
+
+.navbar {  /*PARA EL MARGEN CON EL BORDE*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
 body {
     margin: 0;
 }
@@ -59,4 +68,10 @@ body {
     .heading-copy p {
         font-size: 11px;
     }
+}
+
+img {
+  width: 100%;          /* o 800px, 1000px... lo que quieras */
+  height: 300px;        /* la altura se queda fija */
+  object-fit: cover;   /* mantiene la proporción */
 }
