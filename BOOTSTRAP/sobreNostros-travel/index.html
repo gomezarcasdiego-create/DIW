@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
     <title>Sobre nosotros | Decroly Travel</title>
 </head>
 
 <body>
-    <header class="page-heading">
-        <div class="container heading-content">
-            <span class="heading-badge">WIREFRAME 02</span>
-            <div class="heading-copy">
-                <h1>Sobre nosotros</h1>
-                <p>Identidad de marca, confianza y equipo humano</p>
-            </div>
-        </div>
-    </header>
+    
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Decroly Travel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Menú -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <a class="navbar-brand fw-bold" href="#">Decroly <span class="text-info">Travel</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="menu">
             <div class="ms-auto d-flex flex-wrap align-items-center gap-3 gap-lg-5">
-                <a class="nav-item nav-link active" href="#">Inicio</a>
-                <a class="nav-item nav-link" href="#">Sobre Nosotros</a>
-                <a class="nav-item nav-link" href="#">Reservas</a>
-                <a class="nav-item nav-link disabled" href="#">Contacto</a>
+                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link active" href="#">Sobre nosotros</a>
+                <a class="nav-link" href="#">Reservas</a>
+                <a class="nav-link" href="#">Contacto</a>
+                <a class="btn btn-dark" href="#">Mi cuenta</a>
             </div>
         </div>
     </nav>
-    <footer>
-        <p></p>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=85"
+             alt="Costa tropical" class="hero-image">
+        <div class="hero-text">
+            <h2>Conócenos</h2>
+            <p>Viajar también es confiar en quien te acompaña.</p>
+        </div>
+    </section>
+
+    <main class="container my-4">
+        <!-- Nuestra historia -->
+        <h3 class="titulo">Nuestra historia</h3>
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80"
+                     alt="Paisaje" class="historia-img">
+            </div>
+            <div class="col-md-8">
+                <div class="caja">
+                    <h4>¿Quiénes somos?</h4>
+                    <p>Decroly Travel es una agencia orientada a descubrir destinos, diseñar experiencias
+                        y ayudar a cada viajero a encontrar su próxima aventura.</p>
+                    <p class="text-muted">Nuestra propuesta combina acompañamiento personal, información clara
+                        y opciones de viaje adaptadas a diferentes intereses.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nuestros valores -->
+        <h3 class="titulo">Nuestros valores</h3>
+        <div class="row g-3 mb-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="valor beige"><span class="punto"></span>
+                    <div><strong>Confianza</strong><br>Claridad y transparencia</div></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="valor azul"><span class="punto"></span>
+                    <div><strong>Cercanía</strong><br>Atención personal</div></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="valor beige"><span class="punto"></span>
+                    <div><strong>Sostenibilidad</strong><br>Viajar con respeto</div></div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="valor azul"><span class="punto"></span>
+                    <div><strong>Calidad</strong><br>Experiencias cuidadas</div></div>
+            </div>
+        </div>
+
+        <!-- Nuestro equipo -->
+        <div class="equipo d-flex flex-wrap align-items-center gap-3">
+            <h3 class="titulo mb-0">Nuestro equipo</h3>
+            <span class="etiqueta">Asesoramiento</span> ·
+            <span class="etiqueta">Atención al cliente</span> ·
+            <span class="etiqueta">Especialistas en destinos</span>
+            <a href="#" class="btn btn-viajes ms-auto">Ver nuestros viajes</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pie">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+                <strong>Decroly Travel</strong><br>
+                <small>Tu próxima aventura empieza aquí</small>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="#">Aviso legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Contacto</a>
+                <a href="#">Redes sociales</a>
+            </div>
+        </div>
     </footer>
 
-    <img
-                        src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=85"
-                        alt="Costa tropical"
-                        class="hero-image">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
