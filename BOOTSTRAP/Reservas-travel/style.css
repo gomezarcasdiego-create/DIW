@@ -1,0 +1,183 @@
+
+
+/* DESTINOS */
+
+.destinations-section {
+    padding-top: 3px;
+    padding-bottom: 28px;
+}
+
+.section-kicker,
+.destination-type {
+    color: #0796a5;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.section-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.see-all {
+    color: #0796a5;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.destination-card {
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #d5e2e9;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 17px;
+}
+
+.destination-info h3 {
+    margin: 5px 0;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.destination-info p {
+    min-height: 38px;
+    margin-bottom: 12px;
+    color: #6c879c;
+    font-size: 13px;
+}
+
+.destination-info strong {
+    color: #0796a5;
+    font-size: 16px;
+}
+
+.detail-btn {
+    padding: 7px 15px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 767px) {
+
+    .page-title {
+        font-size: 27px;
+    }
+
+    .page-subtitle {
+        font-size: 13px;
+    }
+
+    .palette {
+        display: none !important;
+    }
+
+    .address-bar {
+        width: 65%;
+        font-size: 11px;
+    }
+
+    .browser-spacer {
+        width: 0;
+    }
+
+    .site-nav {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .brand-name {
+        font-size: 21px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .account-btn {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .hero-section {
+        height: 340px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-tag {
+        display: none;
+    }
+
+    .search-panel {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .search-field {
+        padding: 9px 10px;
+        border-right: 0;
+        border-bottom: 1px solid #d5e2e9;
+    }
+
+    .field-value {
+        font-size: 15px;
+    }
+
+    .search-action {
+        padding: 12px 8px 4px;
+    }
+
+    .benefit-item {
+        gap: 8px;
+    }
+
+    .benefit-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+
+    .benefit-item h3 {
+        font-size: 12px;
+    }
+
+    .benefit-item p {
+        font-size: 11px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .destination-card img {
+        height: 190px;
+    }
+
+    .footer-links {
+        gap: 12px;
+    }
+
+}
