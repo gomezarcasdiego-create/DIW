@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    background-color: #f2f6f8;
+    color: #103d5b;
+    font-family: Arial, sans-serif;
+}
+
+.page-shell {
+    max-width: 1700px;
+    margin: auto;
+}
+
 
 
 /* DESTINOS */
@@ -179,5 +191,4 @@
     .footer-links {
         gap: 12px;
     }
-
 }
