@@ -1,3 +1,5 @@
+/* ESTILOS GENERALES */
+
 body {
     margin: 0;
     background-color: #f2f6f8;
@@ -10,6 +12,287 @@ body {
     margin: auto;
 }
 
+
+/* NAVEGADOR */
+
+.browser-frame {
+    background-color: white;
+    border: 2px solid #d5e2e9;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.browser-bar {
+    height: 43px;
+    background-color: #e8f0f4;
+}
+
+.browser-dots {
+    display: flex;
+    gap: 7px;
+}
+
+.browser-dots i {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #ff7378;
+}
+
+.browser-dots i:nth-child(2) {
+    background-color: #f2c75e;
+}
+
+.browser-dots i:nth-child(3) {
+    background-color: #55c29a;
+}
+
+.address-bar {
+    width: 42%;
+    max-width: 520px;
+    padding: 3px 12px;
+    border: 1px solid #d3e0e7;
+    border-radius: 20px;
+    background-color: white;
+    color: #6c879c;
+    text-align: center;
+    font-size: 13px;
+}
+
+.browser-spacer {
+    width: 52px;
+}
+
+
+/* MENÚ */
+
+.site-nav {
+    min-height: 78px;
+    background-color: white;
+}
+
+.brand-symbol {
+    width: 42px;
+    height: 36px;
+    position: relative;
+    display: inline-block;
+}
+
+.brand-symbol:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 9px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: #ff7954;
+}
+
+.brand-symbol:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 42px;
+    height: 15px;
+    border: 5px solid #0796a5;
+    border-top: 0;
+    border-radius: 0 0 50% 50%;
+    transform: rotate(-7deg);
+}
+
+.brand-name {
+    color: #103d5b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.brand-name b {
+    color: #0796a5;
+    font-weight: normal;
+}
+
+.nav-link {
+    color: #193b55;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    color: #0796a5;
+    border-bottom: 3px solid #0796a5;
+}
+
+.account-btn,
+.detail-btn {
+    background-color: #103d5b;
+    color: white;
+    border-radius: 9px;
+    padding: 10px 24px;
+    font-weight: bold;
+}
+
+
+/* IMAGEN PRINCIPAL */
+
+.hero-section {
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.hero-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(5,48,71,0.78), rgba(5,68,89,0.38), rgba(5,68,89,0.08));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.hero-kicker {
+    color: #ffe1bd;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero-content h2 {
+    max-width: 720px;
+    font-size: 52px;
+    line-height: 1.12;
+    font-weight: bold;
+}
+
+.hero-description {
+    max-width: 540px;
+    margin: 16px 0 22px;
+    font-size: 18px;
+}
+
+.reserve-btn {
+    background-color: #ff7954;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 9px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.hero-tag {
+    position: absolute;
+    right: 4%;
+    bottom: 22px;
+    z-index: 1;
+    padding: 9px 16px;
+    border-radius: 25px;
+    background-color: white;
+    color: #103d5b;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* BUSCADOR VISUAL */
+
+.search-panel {
+    position: relative;
+    z-index: 2;
+    width: 91%;
+    margin: -1px auto 0;
+    padding: 14px 18px;
+    border: 1px solid #bfd3df;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(16,61,91,0.08);
+}
+
+.search-field {
+    padding: 3px 22px;
+    border-right: 1px solid #d5e2e9;
+}
+
+.field-label {
+    color: #6c879c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.field-value {
+    margin-top: 3px;
+    color: #193b55;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.search-action {
+    padding-left: 22px;
+}
+
+.search-btn {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #0796a5;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* VENTAJAS */
+
+.benefits {
+    padding-top: 28px;
+    padding-bottom: 30px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.benefit-icon {
+    width: 47px;
+    height: 47px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e2f3f4;
+    color: #0796a5;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.benefit-item h3 {
+    margin: 0 0 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.benefit-item p {
+    margin: 0;
+    color: #6c879c;
+    font-size: 13px;
+}
 
 
 /* DESTINOS */
@@ -80,8 +363,36 @@ body {
 }
 
 
+/* PIE DE PÁGINA */
 
+.site-footer {
+    min-height: 65px;
+    background-color: #0b3049;
+    color: white;
+}
 
+.site-footer strong {
+    display: block;
+    font-size: 16px;
+}
+
+.site-footer small {
+    display: block;
+    color: #c6d7e1;
+    font-size: 11px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    color: #d0dfe7;
+    font-size: 12px;
+}
+
+.page-note {
+    font-size: 12px;
+}
 
 
 /* ADAPTACIÓN A MÓVILES */
@@ -191,4 +502,166 @@ body {
     .footer-links {
         gap: 12px;
     }
+
+}
+
+
+
+.tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.tab {
+    flex: 1;                         /* los tres botones del mismo ancho */
+    padding: 11px 16px;
+    border: 1px solid #d5e2e9;
+    border-radius: 8px;
+    background-color: #eef3f6;
+    color: #103d5b;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tab:hover {
+    background-color: #e1eaef;
+}
+
+.tab.active {
+    background-color: #0796a5;
+    border-color: #0796a5;
+    color: white;
+}
+
+/* Paneles de contenido */
+.tab-panel {
+    display: none;
+    margin-top: 24px;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+
+
+
+/* FORMULARIO Y RESUMEN */
+
+.booking-section {
+    padding-top: 3px;
+    padding-bottom: 28px;
+}
+
+.booking-form,
+.summary-card {
+    height: 100%;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.booking-form {
+    border: 1px solid #d5e2e9;
+    background-color: white;
+}
+
+.summary-card {
+    border: 1px solid #bfe3e8;
+    background-color: #e6f4f7;
+}
+
+.form-subtitle {
+    margin-bottom: 18px;
+    color: #6c879c;
+    font-size: 13px;
+}
+
+.booking-form .form-label {
+    margin-bottom: 4px;
+    color: #6c879c;
+    font-size: 13px;
+}
+
+.booking-form .form-control,
+.booking-form .form-select {
+    padding: 11px 14px;
+    border: 1px solid #d5e2e9;
+    border-radius: 8px;
+    color: #193b55;
+    font-size: 14px;
+}
+
+.booking-form .form-control:focus,
+.booking-form .form-select:focus {
+    border-color: #0796a5;
+    box-shadow: 0 0 0 3px rgba(7, 150, 165, 0.15);
+}
+
+.confirm-btn {
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #ff7954;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #f2663f;
+}
+
+/* Mensaje de éxito / error */
+.form-message {
+    display: none;
+    margin-top: 16px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-message.success {
+    display: block;
+    background-color: #e3f6ec;
+    color: #1d7a4a;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #fde8e8;
+    color: #b42318;
+}
+
+/* Resumen */
+.summary-list {
+    margin: 0 0 16px;
+    padding: 0;
+    list-style: none;
+}
+
+.summary-list li {
+    margin-bottom: 10px;
+    color: #193b55;
+    font-size: 14px;
+}
+
+.summary-list li:before {
+    content: "✓";
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.summary-note {
+    margin: 0;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: #e3f6ec;
+    color: #1d7a4a;
+    font-size: 12px;
 }

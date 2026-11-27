@@ -1,112 +1,377 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Decroly Travel</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-     <!-- DESTINOS -->
-                <section class="destinations-section px-4 px-lg-5">
 
-                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+    <div class="container-fluid page-shell py-4">
 
-                        <div>
+        <!-- BARRA DEL NAVEGADOR -->
+        <div class="browser-bar d-flex align-items-center justify-content-between px-4">
 
-                            <p class="section-kicker mb-1">
-                                INSPÍRATE
+            <div class="browser-dots">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <div class="address-bar">
+                https://www.decrolytravel.es
+            </div>
+
+            <div class="browser-spacer"></div>
+
+        </div>
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navbar site-nav px-4 px-lg-5">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+
+                <span class="brand-symbol"></span>
+
+                <span class="brand-name">
+                    Decroly <b>Travel</b>
+                </span>
+
+            </a>
+
+            <div class="ms-auto d-flex flex-wrap align-items-center gap-3 gap-lg-5">
+
+                <a class="nav-link">Inicio</a>
+                <a class="nav-link" href="#">Sobre nosotros</a>
+                <a class="nav-link active" href="#">Reservas</a>
+                <a class="nav-link" href="#">Contacto</a>
+
+                <span class="btn account-btn">Mi cuenta</span>
+
+            </div>
+
+        </nav>
+
+
+        <!-- IMAGEN PRINCIPAL -->
+        <section class="hero-section">
+
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=85"
+                alt="Costa tropical" class="hero-image">
+
+            <div class="hero-shade"></div>
+
+            <div class="container-fluid hero-content px-4 px-lg-5">
+
+                <div class="col-lg-7">
+
+                    <p class="hero-kicker">
+                        DESCUBRE EL MUNDO
+                    </p>
+
+                    <h2>
+                        Reserva tu proxima aventura
+                    </h2>
+
+                    <p class="hero-description">
+                        Paquetes, escapadas y actividades
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <div class="tabs">
+            <button class="tab active" data-target="paquetes">Paquetes</button>
+            <button class="tab" data-target="escapadas">Escapadas</button>
+            <button class="tab" data-target="actividades">Actividades</button>
+        </div>
+
+        <div class="tab-panel active /* para darle el color principal (azul) */" id="paquetes">
+            <!-- cards de paquetes -->
+        </div>
+        <div class="tab-panel" id="escapadas">
+            <!-- cards de escapadas -->
+        </div>
+        <div class="tab-panel" id="actividades">
+            <!-- cards de actividades -->
+        </div>
+
+
+        <!-- DESTINOS -->
+        <section class="destinations-section px-4 px-lg-5">
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+
+                <div>
+                    <h2 class="section-title mb-0">
+                        Elige una experiencia
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- GRECIA -->
+                <div class="col-md-4">
+
+                    <article class="destination-card">
+
+                        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85"
+                            alt="Islas griegas">
+
+                        <div class="destination-info">
+
+                            <span class="destination-type">
+                                MAR Y CULTURA
+                            </span>
+
+                            <h3>Islas griegas</h3>
+
+                            <p>
+                                Playas, pueblos blancos y aguas cristalinas.
                             </p>
 
-                            <h2 class="section-title mb-0">
-                                Destinos para soñar
-                            </h2>
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <strong>Desde 649 €</strong>
+
+                                <span class="btn detail-btn">
+                                    Ver viaje
+                                </span>
+
+                            </div>
 
                         </div>
 
-                        <span class="see-all">
-                            Explorar destinos →
-                        </span>
+                    </article>
 
-                    </div>
+                </div>
 
 
-                    <div class="row g-4">
+                <!-- ITALIA -->
+                <div class="col-md-4">
 
-                        <!-- GRECIA -->
-                        <div class="col-md-4">
+                    <article class="destination-card">
 
-                            <article class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85"
+                            alt="Costa italiana">
 
-                                <img
-                                    src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85"
-                                    alt="Islas griegas">
+                        <div class="destination-info">
 
-                                <div class="destination-info">
+                            <span class="destination-type">
+                                ESCAPADA
+                            </span>
 
-                                    <span class="destination-type">
-                                        MAR Y CULTURA
-                                    </span>
+                            <h3>Costa italiana</h3>
 
-                                    <h3>Islas griegas</h3>
+                            <p>
+                                Pequeños pueblos y gastronomía mediterránea.
+                            </p>
 
-                                    <p>
-                                        Playas, pueblos blancos y aguas cristalinas.
-                                    </p>
+                            <div class="d-flex justify-content-between align-items-center">
 
-                                    <div class="d-flex justify-content-between align-items-center">
+                                <strong>Desde 529 €</strong>
 
-                                        <strong>Desde 649 €</strong>
+                                <span class="btn detail-btn">
+                                    Ver viaje
+                                </span>
 
-                                        <span class="btn detail-btn">
-                                            Ver viaje
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-                            </article>
+                            </div>
 
                         </div>
 
+                    </article>
 
-                        <!-- ITALIA -->
-                        <div class="col-md-4">
+                </div>
 
-                            <article class="destination-card">
 
-                                <img
-                                    src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85"
-                                    alt="Costa italiana">
+                <!-- PARAÍSO TROPICAL -->
+                <div class="col-md-4">
 
-                                <div class="destination-info">
+                    <article class="destination-card">
 
-                                    <span class="destination-type">
-                                        ESCAPADA
-                                    </span>
+                        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=85"
+                            alt="Playa tropical">
 
-                                    <h3>Costa italiana</h3>
+                        <div class="destination-info">
 
-                                    <p>
-                                        Pequeños pueblos y gastronomía mediterránea.
-                                    </p>
+                            <span class="destination-type">
+                                SOL Y RELAX
+                            </span>
 
-                                    <div class="d-flex justify-content-between align-items-center">
+                            <h3>Paraíso tropical</h3>
 
-                                        <strong>Desde 529 €</strong>
+                            <p>
+                                Desconecta en playas de arena blanca.
+                            </p>
 
-                                        <span class="btn detail-btn">
-                                            Ver viaje
-                                        </span>
+                            <div class="d-flex justify-content-between align-items-center">
 
-                                    </div>
+                                <strong>Desde 899 €</strong>
 
-                                </div>
+                                <span class="btn detail-btn">
+                                    Ver viaje
+                                </span>
 
-                            </article>
+                            </div>
 
                         </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FORMULARIO Y RESUMEN -->
+        <section class="booking-section px-4 px-lg-5">
+
+            <div class="row g-4">
+
+                <!-- FORMULARIO -->
+                <div class="col-lg-8">
+
+                    <form class="booking-form" id="bookingForm" novalidate>
+
+                        <h2 class="section-title mb-1">Formulario de reserva</h2>
+                        <p class="form-subtitle">Introduce tus datos para solicitar la reserva.</p>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-4">
+                                <label class="form-label" for="destino">Destino seleccionado</label>
+                                <select class="form-select" id="destino">
+                                    <option value="Islas griegas">Islas griegas</option>
+                                    <option value="Costa italiana">Costa italiana</option>
+                                    <option value="Paraíso tropical">Paraíso tropical</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label" for="fecha">Fecha de salida</label>
+                                <input type="date" class="form-control" id="fecha">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label" for="viajeros">N.º viajeros</label>
+                                <select class="form-select" id="viajeros">
+                                    <option value="1">1 persona</option>
+                                    <option value="2" selected>2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                    <option value="6">6 personas</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label" for="nombre">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label" for="email">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="tu@email.com">
+                            </div>
+
+                            <div class="col-md-4 d-flex align-items-end">
+                                <button type="submit" class="confirm-btn w-100">Confirmar reserva</button>
+                            </div>
+
+                        </div>
+
+                        <div class="form-message" id="formMessage" role="alert"></div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- RESUMEN -->
+                <div class="col-lg-4">
+
+                    <aside class="summary-card">
+
+                        <h2 class="section-title mb-3">Resumen de reserva</h2>
+
+                        <ul class="summary-list">
+                            <li>Destino: <span id="resumenDestino">Islas griegas</span></li>
+                            <li>Personas: <span id="resumenPersonas">2 viajeros</span></li>
+                            <li>Incluye alojamiento</li>
+                            <li>Incluye actividades</li>
+                        </ul>
+
+                        <p class="summary-note">✓ Éxito / error: aviso en esta pantalla</p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="site-footer d-flex flex-wrap justify-content-between align-items-center gap-3 px-4 px-lg-5">
+
+            <div>
+
+                <strong>Decroly Travel</strong>
+
+                <small>
+                    Tu próxima aventura empieza aquí
+                </small>
+
+            </div>
+
+            <div class="footer-links">
+
+                <span>Aviso legal</span>
+                <span>Privacidad</span>
+                <span>Contacto</span>
+                <span>Redes sociales</span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <p class="page-note mt-3 mb-0">
+        03/05 · DISEÑO DE INTERFACES WEB · ESTRUCTURA ORIENTATIVA (NO FUNCIONAL)
+    </p>
+
+    </main>
+
+    </div>
+
+
+
 </body>
+
 </html>
